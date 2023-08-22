@@ -1,0 +1,384 @@
+/* -------------------- Custom Properties -------------------- */
+
+:root{
+    --primary-color:rgb(242, 246, 254);
+    --second-color:rgb(102, 159, 77);
+    --third-color:black;
+    --verif-color:rgb(102, 159, 77);
+    --transition-1: all 0.3s ease;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;  /* Light regular medium bold */
+    font-size: 1rem;  
+    font-weight: 400;
+    color:var(--third-color);
+}
+
+body{
+    background-color: var(--primary-color);
+}
+
+/* -------------------- Bootstrap Styles -------------------- */
+
+.btn-primary{
+    background-color: rgb(102, 159, 77);
+    color:var(--primary-color);
+    font-weight: 500;
+    border:none;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg:rgb(159, 212, 136);
+    --bs-btn-border-color: rgb(159, 212, 136);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgb(159, 212, 136);
+    --bs-btn-hover-border-color: rgb(159, 212, 136);
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: rgb(159, 212, 136);
+    --bs-btn-active-border-color: rgb(159, 212, 136);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: rgb(159, 212, 136);
+    --bs-btn-disabled-border-color: rgb(159, 212, 136);
+}
+
+.card{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.20);
+}
+
+.card:hover{
+    transform: scale(1.05);
+    outline: 3px solid rgb(102, 159, 77);
+    transition: transform 0.5s ease;
+}
+
+/* -------------------- My Styles -------------------- */
+
+.index-header{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    margin:0;
+    padding: 0;
+    position: sticky;
+    top:0;
+    z-index: 1;
+    background-color: black;
+    border-bottom: 1px solid rgba(0,0,0,0.20);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.30);
+    overflow: hidden;
+}
+
+.container-index-header{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    column-gap: 0.4rem;
+    text-decoration: none;
+    color:rgb(102, 159, 77);
+}
+
+.logo__title{
+    margin: 0;
+    font-family: 'Roboto Slab';
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+    font-size: 2.5rem;
+    color:rgb(102, 159, 77);
+}
+
+.logo__icon, .user-icon{
+    font-size:2.5rem;
+    color:rgb(102, 159, 77);
+}
+
+.log-out-icon{
+    font-size:2rem;
+    color:rgb(102, 159, 77);
+}
+
+.chat-icon{
+    font-size: 3rem;
+    color:rgb(102, 159, 77);
+}
+
+.chat-icon:hover{
+    transition: var(--transition-1);
+    color:rgb(102, 159, 77);
+}
+
+.user-icon:hover, .log-out-icon:hover{
+    opacity: 0.70;
+    transition: var(--transition-1);
+}
+
+.open-icon, .checked-icon{
+    font-size: 1rem;
+    color:rgb(102, 159, 77);
+}
+
+.ok-icon{
+    font-size:2rem;
+    color:rgb(102, 159, 77);
+}
+
+.add-icon{
+    font-size: 2rem;
+    color:rgb(102, 159, 77);
+}
+
+.remove-icon{
+    font-size:1rem;
+    cursor:pointer;
+}
+
+
+.remove-icon:hover{
+    transition: var(--transition-1);
+    opacity:0.70;
+}
+
+.subject-icon{
+    font-size:2rem;
+    color:rgb(102, 159, 77);
+}
+
+.index-main{
+    padding: 0;
+    margin: 0;
+    min-height: calc(100vh - 12.5rem);
+}
+
+.index-hero{
+    background-image: url("../img/college.jpg");
+    background-size: cover;
+    background-position:center;
+}
+
+.redes{
+    font-size:2.2rem;
+    padding: 0 0.5rem;
+    color:rgb(102, 159, 77);
+}
+
+.index-banner{
+    width: 100%;
+    margin: auto;
+}
+
+.index-footer{
+    position: relative;
+    z-index: 1;
+}
+
+.redes:hover{
+    transition: var(--transition-1);
+    color:rgb(102, 159, 77);
+}
+
+.text-primary-color{
+    color:var(--primary-color);
+}
+
+.text-second-color{
+    color:rgb(102, 159, 77);
+}
+
+.text-third-color{
+    color:var(--third-color);
+}
+
+.bg-black-a{
+    background-color: rgba(0,0,0,0.70);
+}
+
+.bg-primary-color{
+    background-color: var(--primary-color);
+}
+
+.bg-second-color{
+    background-color: var(--second-color);
+}
+
+.bg-third-color{
+    background-color: var(--third-color);
+}
+
+.w-60{
+    width: 60%;
+}
+
+.w-90{
+    width: 90%;
+}
+
+.fs-xs{
+    font-size: 0.7rem;
+}
+
+.index-input{
+    border:none;
+    outline: none;
+    border-bottom:2px solid rgb(102, 159, 77);
+}
+
+.index-input:focus{
+    transition: var(--transition-1);
+    border-bottom:2px solid rgb(102, 159, 77);
+}
+
+.generic-link{
+    color:black;
+    font-weight: 300;
+}
+
+.generic-link:hover{
+    color:rgb(102, 159, 77);
+}
+
+.pers-shadow{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.20);
+}
+
+.index-footer{
+    box-sizing: border-box;
+    height: 7.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.30);
+    border-top:1px solid rgba(0, 0, 0, 0.20);
+    overflow: hidden;
+}
+
+.logueado-header{
+    border-bottom: 1px solid rgba(0,0,0,0.20);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.30);
+    overflow: hidden;
+}
+
+.logueado-footer{
+    border-top: 1px solid rgb(102, 159, 77);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.30);
+    overflow: hidden;
+}
+
+
+.mx-xl{
+    margin-left:5rem;
+    margin-right: 5rem;
+}
+
+.my-xl{
+    margin-top:5rem;
+    margin-bottom: 5rem;
+}
+
+.mt-xl{
+    margin-top:5rem;
+}
+
+.mb-xl{
+    margin-bottom:5rem;
+}
+
+.ms-xl{
+    margin-left:5rem;
+}
+
+.me-xl{
+    margin-right:5rem;
+}
+
+.card-insc:hover{
+    transform: none;
+    cursor: pointer;
+}
+
+.card-selected{
+    outline: 3px solid rgb(102, 159, 77);
+}
+
+.add-subject{
+    cursor:pointer;
+}
+
+.add-subject:hover{
+    transition: var(--transition-1);
+    opacity:0.70;
+}
+
+.comprobante-insc{
+    width: 100%;
+    border:1px solid rgba(0, 0, 0, 0.20);
+}
+
+/* -------------------- XS (Portrait phones - Default Bootstrap) -------------------- */
+
+.index-form{
+    width: 100%;
+    border:1px solid rgba(0, 0, 0, 0.20);
+    overflow: hidden;
+}
+
+.index-hero{
+    background-image: url("../img/college.jpg");
+    background-size: cover;
+    background-position:top center;
+}
+
+/* -------------------- S (Landscape phones) -------------------- */
+
+@media (min-width: 576px) {
+
+.index-form{
+    width: 75%;
+}
+
+.comprobante-insc{
+    width: 75%;
+}
+
+
+}
+
+/* -------------------- M (Tablets) -------------------- */
+
+@media (min-width: 768px) {
+
+    
+}   
+
+/* -------------------- L (Desktops) -------------------- */
+
+@media (min-width: 992px) {
+ 
+.index-hero{
+    background-image: url("../img/college.jpg");
+    background-size: cover;
+    background-position:center;
+}
+
+}
+
+/* -------------------- XL (Large desktops) -------------------- */
+
+@media (min-width: 1200px) {
+
+}
+
+/* -------------------- XXL (Larger desktops) -------------------- */
+
+@media (min-width: 1400px) {
+
+}
